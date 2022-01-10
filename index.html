@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+    Access-Control-Allow-Origin *
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./src/css/swiper-bundle.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/normalize.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Soup</title>
+</head>
+<body>
+<header class="header">
+    <nav>
+                <a href=""><img src="./src/assets/image/icons/logo.svg" alt=""></a>
+        <ul class="header__menu">
+                <li><a href="#">Меню</a></li>
+                <li><a href="#">Як це працює</a></li>
+                <li><a href="#">Чому ми</a></li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Акція</a></li>
+                <li><a href="#">Контакти</a></li>
+                <li><a href="#" class="header__called">Замовити дзвінок</a></li>
+        </ul>
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+            <ul class="menu__box">
+                <li><a class="menu__item" href="#">Меню</a></li>
+                <li><a class="menu__item" href="#">Як це працює</a></li>
+                <li><a class="menu__item" href="#">Чому ми</a></li>
+                <li><a class="menu__item" href="#">Доставка</a></li>
+                <li><a class="menu__item" href="#">Акція</a></li>
+                <li><a class="menu__item" href="#">Контакти</a></li>
+                <a href="#" class="menu__called">Замовити дзвінок</a>
+                <li><a class="menu__item number" href="#">+384848582349</a></li>
+                <a href="#" class="facebook__menu"><img src="./src/assets/image/icons/social/facebook.svg" alt=""></a>
+                <a href="#" class="instagram__menu"><img src="./src/assets/image/icons/social/Instagram.svg" alt=""></a>
+                <a href="#" class="telegram__menu"><img src="./src/assets/image/icons/social/Telegram.svg" alt=""></a>
+        </ul>
+        </div>
+    </nav>
+
+
+    <div class="image-background">
+        <div class="wrapper header__form">
+            <h1>Ми задоволені, коли задоволений клієнт</h1>
+            <p>Наша мета – ваш комфорт та його швидкість доставки до офісу. Якісна українська та азіатська кухня ще не була такою доступною</p>
+            <form>
+                <input type="text" placeholder="Введіть ваше ім'я">
+                <input type="text" placeholder="Введіть номер телефону">
+                <input type="submit" value="Зробить замовлення">
+            </form>
+            <div class="header__social">
+                <img src="./src/assets/image/icons/Rectangle.svg" alt="">
+                <a href="#"><img src="./src/assets/image/icons/telegram.svg" alt="" class="header__social-icon"></a>
+                <a href="#"><img src="./src/assets/image/icons/instagram.svg" alt="" class="header__social-icon"></a>
+                <a href="#"><img src="./src/assets/image/icons/facebook.svg" alt="" class="header__social-icon"></a>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="wrapper section-why-us" data-aos="fade-right">
+        <div class="why-us">
+            <h2>Чому ми?</h2>
+        </div>
+        <div class="about-us">
+            <div class="about-us__item">
+                <img src="./src/assets/image/icons/chef.svg" alt="шеф иконка">
+                <p>Один раз спробуєте та особисто переконаєтесь,
+                    що наші страви дуже смачні.
+                    85% замовників прийшли за рекомендаціями</p>
+            </div>
+            <div class="about-us__item">
+                <img src="./src/assets/image/icons/hot-eat.svg" alt="готовая еда иконка">
+                <p>Доставка їжі до офісу здійснюється щодня,
+                    передбачена система попереднього замовлення,
+                    за кожним офісом закріплений персональний менеджер</p>
+            </div>
+            <div class="about-us__item">
+                <img src="./src/assets/image/icons/food-safety.svg" alt="еда иконка">
+                <p>Цінуємо кожного клієнта і дбаємо про ваше здоров'я.
+                    Всі інгредієнти в нашому меню відповідають нормам якості,
+                    маркування регулярно перевіряється.</p>
+            </div>
+        </div>
+</section>
+<section class="soup-menu">
+    <div class="soup-menu__menu">
+        <div class="soup-menu__orange-clip" data-aos="fade-right"
+             data-aos-offset="300"
+             data-aos-easing="ease-in-sine">
+            <h2>the soup <span>menu</span></h2>
+            <div class="next">
+                <div class="swiper-button-next"></div>
+            </div>
+            <div class="prev">
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <div class="swiper mySwiper" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./src/assets/image/slider/soup.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./src/assets/image/slider/soup.jpg" alt=""></div>
+            </div>
+        </div>
+        <div class="soup-menu__description" >
+            <p>Унікальна добірка української та азійської кухні.
+                Ми вивчили кожну страву цих країн,
+                щоб зібрати вам найкраще меню на будь-який смак. </p>
+            <button>Отримати меню на тиждень</button>
+        </div>
+    </div>
+    <div class="block-btn-menu">
+        <button class="btn-mobile-menu">Отримати меню на тиждень</button>
+    </div>
+
+    <div class="info-menu wrapper">
+        <div class="info-menu__item" data-aos="fade-up">
+            <h3>150 грн*</h3>
+            <span>при замовленні від 10 порцій</span>
+            <ul>
+                <li>Один гарнір вагою до 250 грамів</li>
+                <li>Суп, салат та десерти <br> на вибір 1 порція</li>
+                <li>Окреме пакування страв</li>
+            </ul>
+            <button>Повне меню</button>
+        </div>
+        <div class="info-menu__item" data-aos="fade-up">
+            <h2>Бюджету на одного співробітника незалежно від обраного боксу</h2>
+            <p>Оформлення в онлайн-сервісі або за телефоном на сайті</p>
+            <p>Безкоштовна доставкою по Києву</p>
+        </div>
+    </div>
+</section>
+
+<section class="package" data-aos="fade-right">
+    <div class="wrapper package__slider">
+        <div class="package__description">
+            <h2>Крафтова упаковка</h2>
+            <p>Весь асортимент страв доставляється в крафтовій упаковці - це дозволяє доставляти їжу максимально свіжою.
+                Переваги такої упаковки:
+            </p>
+            <ul>
+                <li>екологічна</li>
+                <li>практична</li>
+                <li>зручна</li>
+                <li>зберігає смак продуктів</li>
+            </ul>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div class="swiper mySwiper" data-aos="fade-up-right">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./src/assets/image/slider/package.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./src/assets/image/slider/package.jpg" alt=""></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="wrapper itworks">
+        <div class="itworks__section-one">
+            <div class="itworks__section-item">
+                <h2>Як це працює?</h2>
+            </div>
+            <div class="itworks__section-item">
+                <div class="itworks__section-stage" data-aos="zoom-in-up">
+                    <img src="./src/assets/image/icons/1.svg" alt="">
+                    <p>Оформіть замовлення за телефоном або на сайті компанії The Soup</p>
+                </div>
+                <div class="itworks__section-stage" data-aos="zoom-in-up">
+                    <img src="./src/assets/image/icons/2.svg" alt="">
+                    <p>З вами зв'яжеться наш менеджер та уточнить усі деталі доставки</p>
+                </div>
+            </div>
+        </div>
+    <div class="itworks__section-two">
+        <div class="itworks__section-item">
+            <div class="itworks__section-stage" data-aos="zoom-in">
+                <img src="./src/assets/image/icons/3.svg" alt="" >
+                <p>У зручний для Вас час, наступного дня, їжа буде доставлена за вказаною адресою</p>
+            </div>
+            <div class="itworks__section-stage" data-aos="zoom-in">
+                <img src="./src/assets/image/icons/4.svg" alt="">
+                <p>Насолоджуйтесь смачним обідом, не залишаючи офіс</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="commands">
+    <div class="commands__orange-clip" data-aos="fade-right">
+        <div class="commands__orange-img" >
+            <img src="./src/assets/image/cooking.jpg" alt="">
+            <div class="commands__orange-item">
+                <h2>Команда</h2>
+                <div class="commands__orange-stage" data-aos="zoom-in-down">
+                    Наша команда організовує корпоративні обіди від 2 до 100 осіб,
+                    виходячи з індивідуальних переваг кожного вашого співробітника
+                </div>
+            </div>
+
+            <div class="commands__white-item" data-aos="zoom-in-down">
+                <div class="commands__white-stage">
+                    При оформленні замовлення, буде проведено коротке анкетування та сформовано карту смакових уподобань,
+                    виходячи з якої і буде обрано раціон того чи іншого працівника офісу для подальшої доставки їжі по Києву.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="form-action" >
+    <div class="wrapper form-action__promotion" data-aos="fade-up">
+            <div class="form-action__item">
+                <h2>Акція</h2>
+                <p>Приводь компанію та отримай 10% Знижку на весь час</p>
+                <p>Для наших постійних клієнтів проводиться акція <span>-10%</span> на весь час обслуговування за умови,
+                    що ви приведете іншу компанію, яка стане нашим клієнтом на регулярній основі</p>
+                <div class="promotion">-10%</div>
+            </div>
+        <div class="form-action__item">
+            <div class="form-action__orange-stage">
+                <img src="./src/assets/image/soup1.jpg" alt="">
+                <img src="./src/assets/image/soup2.jpg" alt="">
+                <img src="./src/assets/image/soup1.jpg" alt="">
+                <img src="./src/assets/image/soup2.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="form-action__form wrapper">
+        <h2>Бажаєте оформити замовлення?</h2>
+        <form>
+            <input type="text" placeholder="Введіть ваше ім'я">
+            <input type="text" placeholder="Введіть номер телефону">
+            <input type="submit" value="Замовити дзівнок">
+        </form>
+        <h2>Ми самі зателефонуємо Вам!</h2>
+    </div>
+</section>
+
+
+<script src="./src/js/index.js"></script>
+<script src="./src/js/swiper-bundle.js"></script>
+<script src="src/js/swiper-params.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>
